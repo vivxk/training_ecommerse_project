@@ -1,0 +1,109 @@
+.products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    margin: 20px 0;
+}
+
+/* ----------- Product Item ----------------- */
+@import url("../utils/productItem/productItem.css");
+
+.delete-all{
+    text-align: right;
+    margin: 20px;
+}
+.delete-all input{
+    height: 25px;
+    width: 25px;
+    transform: translateY(5px);
+    margin: 0 15px;
+}
+.delete-all span{
+    text-transform: uppercase;
+    color: rgb(3, 165, 206);
+    letter-spacing: 1.3px;
+}
+.delete-all button{
+    border: 1px solid crimson;
+    padding: 10px 25px;
+    color: crimson;
+    text-transform: uppercase;
+}
+
+/* ------------ Filters Menu ----------------- */
+.filter_menu{
+    width: 100%;
+    min-height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+.filter_menu select, input{
+    outline: none;
+    font-size: 17px;
+    border: none;
+    height: 40px;
+    padding: 0 5px;
+}
+.filter_menu input{
+    /* border: 1px solid yellow; */
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* -------------------- Load More --------------- */
+.load_more{
+    text-align: center;
+}
+.load_more button{
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+/* .container {
+    width: 800px;
+    margin: 90px auto 0;
+} */
+.input {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    border: none;
+}
+.input:focus {
+    outline: none;
+}
+.input:focus + .input-underline {
+    width: 100%;
+    transition: width 0.2s ease-in;
+}
+.input-underline {
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    display: block;
+    background: rgb(224, 162, 29);
+    width: 0%;
+    height: 2px;
+    transition: width 0.2s ease-out;
+}
+.input-wrapper {
+    display: inline-block;
+    position: relative;
+    border-bottom: 2px solid rgba(14, 13, 13, 0.2);
+    box-sizing: border-box;
+}
+.input-wrapper:focus::before {
+    width: 100%;
+}
